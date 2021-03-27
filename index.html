@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!-- if you expect to find something interesting in here you're incredibly wrong im sorry -->
+<html>
+<scrollhide> <!-- This family just disables scrolling and hides the scrollbar, as well as auto-scrolling to the top if needed. -->
+	<style>
+		body {
+			overflow: hidden;
+			min-height: 100%;
+		}
+	</style>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			window.scrollTo(0,0);
+		});
+	</script>
+</scrollhide>
+	<body style="background-color:#23272a" onclick="player.play()">
+		<div class="essemcube">
+			<a href="http://projectlounge.pw/" target="_blank">
+				<img src="img/essemcube.gif" alt="essem cube" class="center">
+			</a>
+			<style>
+			.essemcube {
+					display: flex;
+					position:relative;
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+					text-align: center;
+					min-height: 100vh;
+					}
+			</style>
+		<iframe src="mus/silence.mp3" type="audio/mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+		<audio id="player" autoplay loop>
+			<source src="mus/quash.wav" type="audio/wav">
+		</audio>
+	</body>
+</html>
